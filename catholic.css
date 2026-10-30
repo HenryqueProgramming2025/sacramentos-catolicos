@@ -1,0 +1,256 @@
+.Header{
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size: larger;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #F9D976, #E9B646, #9A7432);
+    padding: 20px;
+    border: solid 3px;
+}
+
+.Header img{
+    height: 300px;
+    border: solid 3px;
+}
+
+.Cathecism{
+    color: red;
+    font-weight: bolder;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.Cathecism h3{
+    text-align: right;
+    color: black;
+}
+
+@keyframes sacinit{
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.SacramentsInit{
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-size: larger;
+    font-weight: bolder;
+    width: 850px;
+    margin: 0 auto;
+    border: solid 3px;
+    background: linear-gradient(120deg, #1D3557 0%, #7209B7 35%, #F72585 70%, #FFB703 100%);
+    padding: 10px;
+    animation: sacinit 1s ease-out;
+}
+
+.Baptism, .Confirmation, .Eucharist{
+    height: 200px;
+    width: 200px;
+    border: solid 3px black;
+    margin: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.Wrapper, .WrapperTwo, .WrapperThree{
+    position: relative;
+    display: inline-block;
+}
+
+.Badge, .BadgeTwo, .BadgeThree{
+    position: absolute;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 500px;
+    border: solid 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    top: 10px;
+    left: 10px;
+}
+
+.Confession, .Anointing, .HolyOrder, .Matrimony, .BaptismText, .KidBaptized, .ConfirmationText, .HolyBibleTwo, .Templar, .EucharistText, .EucharistConclusion{
+    height: 200px;
+    width: 270px;
+    border: solid 3px;
+    margin: 10px;
+}
+
+.ExplainingSacraments{
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    width: 500px;
+    border: solid 3px;
+    padding: 10px;
+    background: linear-gradient(90deg, #c2b280, #e8ddcb, #fdfbf7, #e8ddcb, #bca475, #e8ddcb, #fdfbf7, #e8ddcb, #c2b280);
+    border-radius: 3px;
+} 
+
+.CardLink:hover img{
+    transform: translateY(-10px) scale(1.05);
+    border-color: red;
+}
+
+/*
+Luce Button
+*/
+
+.LuceButton{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.LuceButton img{
+    width: 100px;
+    border-radius: 100px;
+    border: solid 5px cyan;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.LuceButton:hover img{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 10px gold;
+    border-color: gold;
+}
+
+/*Baptism Page*/
+
+.BaptismHeader{
+    text-align: center;
+    background: linear-gradient(135deg, #001f3f, #003366, #005b96);
+    padding: 10px;
+    font-family: "Dancing Script";
+    font-size: x-large;
+    color: white;
+}
+
+.BaptismHeader img, .ConfirmationHeader img, .EucharistHeader img{
+    height: 300px;
+    width: 500px;
+    border: solid 3px;
+}
+
+.SacramentsVerse{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.SacramentsVerse h2{
+    text-align: right;
+}
+
+/*
+Keyframes to explain the Sacraments
+*/
+
+@keyframes fadeIn{
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ExplainingSacrament{
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Cormorant Garamond";
+    font-size: larger;
+    width: 600px;
+    background: linear-gradient(135deg, #fffdf5, #f4e8c1, #d4b878);
+    border: solid 3px #9A7432;
+    animation: fadeIn 2s ease-out;
+}
+
+.ExplainingSacrament p{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+
+span{
+    font-family: sans-serif;
+    color: red;
+}
+
+.BaptismBody{
+    background: linear-gradient(180deg, #fffdf5, #f4e8c1, #d4b878);
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: solid 3px;
+    font-weight: bold;
+}
+
+/*Confirmation Page*/
+
+.ConfirmationHeader{
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Dancing Script";
+    font-size: x-large;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #b71c1c, #e53935, #ff9800);
+    padding: 10px;
+    color: white;
+}
+
+.ConfirmationBody{
+    margin: 0 auto;
+    background: linear-gradient(180deg, #fffaf5, #ffe6d5, #f5cfb8);
+    background-attachment: fixed;
+}
+
+/*Eucharist Page*/
+
+.EucharistHeader{
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Dancing Script";
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 10px;
+    background: linear-gradient(135deg, #d4af37, #b8860b, #4a0e17);
+    color: white;
+}
+
+.EucharistBody{
+    margin: 0 auto;
+    background: linear-gradient(180deg, #fffdf5, #f4e8c1, #e8d5a6);
+    background-attachment: fixed;
+}
+
+.ExplainingSacrament ul{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ExplainingSacrament li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+}
+
+
+
+
+
+
+
